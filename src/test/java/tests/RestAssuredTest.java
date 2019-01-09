@@ -33,7 +33,7 @@ public class RestAssuredTest {
     @Test
     public void checkResponseBody() {
         Response rp = given().get("/users").andReturn();
-        User[] posts = rp.as(User[].class);
-        Assert.assertEquals(posts.length, 10);
+        User[] users = rp.as(User[].class);
+        Assert.assertEquals(users.length, 10);
     }
 }
