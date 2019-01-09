@@ -88,4 +88,18 @@ public class User {
         this.additionalProperties.put(name, value);
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", address=" + address +
+                ", phone='" + phone + '\'' +
+                ", website='" + website + '\'' +
+                ", company=" + company +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

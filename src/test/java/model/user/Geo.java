@@ -34,4 +34,12 @@ public class Geo {
         this.additionalProperties.put(name, value);
     }
 
+    @Override
+    public String toString() {
+        return "Geo{" +
+                "lat='" + lat + '\'' +
+                ", lng='" + lng + '\'' +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

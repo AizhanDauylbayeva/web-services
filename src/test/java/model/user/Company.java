@@ -43,4 +43,13 @@ public class Company {
         this.additionalProperties.put(name, value);
     }
 
+    @Override
+    public String toString() {
+        return "Company{" +
+                "name='" + name + '\'' +
+                ", catchPhrase='" + catchPhrase + '\'' +
+                ", bs='" + bs + '\'' +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

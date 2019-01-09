@@ -61,4 +61,15 @@ public class Address {
         this.additionalProperties.put(name, value);
     }
 
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", suite='" + suite + '\'' +
+                ", city='" + city + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                ", geo=" + geo +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }
